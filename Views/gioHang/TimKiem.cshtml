@@ -1,0 +1,26 @@
+﻿@model List< appweb.Models.sanPham>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>tim kiem</title>
+</head>
+<body>
+    @{
+        var tenSP = HttpContext.Current.Session["ten"];
+    }
+    @foreach(var item in Model)
+            {
+                <img src="~/img/@item.hinhAnh" />
+                <div>
+                    <div style="margin-left:130px">@item.tenSP</div>
+                    <div style="margin-right:130px"> @item.giaBan</div>
+                </div>
+            }
+</body>
+</html>
