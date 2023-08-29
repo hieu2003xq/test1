@@ -24,6 +24,7 @@ namespace appweb.Controllers
 
                 var a = 1;
                 a++;
+                var b = 2;
                 ViewBag.tongSL = b.tongSL();
 
             }
