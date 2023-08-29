@@ -21,8 +21,9 @@ namespace appweb.Controllers
         {
             if (Session["gmail"] == null)
             {
-                
-             
+
+                var a = 1;
+                a++;
                 ViewBag.tongSL = b.tongSL();
 
             }
